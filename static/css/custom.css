@@ -1,148 +1,116 @@
-#number-projects-nd {
-    background: #33CC99;
-    position: relative;
-    font-size: 29px;
-    color: white;
-    text-align: center;
-    padding-top: 12px;
-    padding-bottom: 0px;
-}
-#total-donations-nd {
-    font-size: 29px;
-}
-.dc-chart g.row text {
-    fill: black;
-    font-size: 12px;
-}
-#total-projects {
-    background: #33CC99;
-    width: 200px;
-    position: relative;
-    height: 60px;
-    font-size: 29px;
-    color: white;
-    vertical-align: middle;
-    text-align: center;
-    padding-top: 12px;
-    padding-bottom: 0px;
-}
-#net-donations {
-    background: #33CC99;
-    width: 200px;
-    position: relative;
-    height: 60px;
-    font-size: 29px;
-    color: white;
-    vertical-align: middle;
-    text-align: center;
-    padding-top: 12px;
-    padding-bottom: 0px;
-}
-#time-chart{
-    flex-flow: column;
-    flex-wrap: wrap;
-    align-self: left;
-    float: left;
-    padding-top: 12px;
-    padding-bottom: 0px;
-}
-#resource-type-row-chart{
-    flex-flow: column;
-    flex-wrap: wrap;
-    align-self: left;
-    float: left;
-    padding-top: 12px;
-    padding-bottom: 0px;
-}
-#poverty-level-row-chart{
-    flex-flow: column;
-    flex-wrap: wrap;
-    align-self: right;
-    float: right;
-    padding-top: 12px;
-    padding-bottom: 0px;
-    display: inline-block;
-}
-#funding-chart{
-    flex-flow: column;
-    flex-wrap: wrap;
-    align-self: right;
-    float: right;
-    padding-top: 12px;
-    padding-bottom: 0px;
-    display: inline-block;
-}
-.dc-select-menu {
-    background: #33CC99;
+ #number-projects-nd {
+     background: #33CC99;
+     position: relative;
+     font-size: 29px;
+     color: white;
+     text-align: center;
+     padding-top: 12px;
+     padding-bottom: 0px;
+ }
+ #total-donations-nd {
+     font-size: 29px;
+ }
+ .dc-chart g.row text {
+     fill: black;
+     font-size: 12px;
+ }
+ #total-projects {
+     background: #33CC99;
+     width: 200px;
+     position: relative;
+     height: 60px;
+     font-size: 29px;
+     color: white;
+     vertical-align: middle;
+     text-align: center;
+     padding-top: 12px;
+     padding-bottom: 0px;
+ }
+ #net-donations {
+     background: #33CC99;
+     width: 200px;
+     position: relative;
+     height: 60px;
+     font-size: 29px;
+     color: white;
+     vertical-align: middle;
+     text-align: center;
+     padding-top: 12px;
+     padding-bottom: 0px;
+ }
+ #time-chart{
+     flex-flow: column;
+     flex-wrap: wrap;
+     align-self: left;
+     float: left;
+     padding-top: 12px;
+     padding-bottom: 0px;
+ }
+ #resource-type-row-chart{
+     flex-flow: column;
+     flex-wrap: wrap;
+     align-self: left;
+     float: left;
+     padding-top: 12px;
+     padding-bottom: 0px;
+ }
+ #poverty-level-row-chart{
+     flex-flow: column;
+     flex-wrap: wrap;
+     align-self: right;
+     float: right;
+     padding-top: 12px;
+     padding-bottom: 0px;
+     display: inline-block;
+ }
+ #funding-chart{
+     flex-flow: column;
+     flex-wrap: wrap;
+     align-self: right;
+     float: right;
+     padding-top: 12px;
+     padding-bottom: 0px;
+     display: inline-block;
+ }
+ .dc-select-menu {
+     background: #33CC99;
+     width: 100%;
+     border: none;
+     position: relative;
+     height: 31px;
+     font-size: 15px;
+     color: white;
+     vertical-align: middle;
+     text-align: center;
+     padding-top: 4px;
+     padding-bottom: 0px;
+ }
+ .tooltip{
+     font-weight: normal;
+     data-position:right;
+ }
+ .intro_button{
+     margin-top: 10px;
+     margin-left: 60px;
+     background-color: #1ab394;
+     color: white;
+ }
+ .chart-wrapper {
+     background: #fff;
+     border: 1px solid #e2e2e2;
+     border-radius: 3px;
+     margin-bottom: 10px;
+ }
+ .chart-wrapper .chart-title {
+     border-bottom: 1px solid #d7d7d7;
+     color: #666;
+     font-size: 14px;
+     font-weight: 200;
+     padding: 7px 10px 4px;
+ }
+ .row {
+     padding-left: 20px !important;
+ }
+.dc-chart {
     width: 100%;
-    border: none;
-    position: relative;
-    height: 31px;
-    font-size: 15px;
-    color: white;
-    vertical-align: middle;
-    text-align: center;
-    padding-top: 4px;
-    padding-bottom: 0px;
-}
-.tooltip{
-    font-weight: normal;
-    data-position:right;
-}
-.intro_button{
-    margin-top: 10px;
-    margin-left: 60px;
-    background-color: #1ab394;
-    color: white;
-}
-.chart-wrapper {
-    background: #fff;
-    border: 1px solid #e2e2e2;
-    border-radius: 3px;
-    margin-bottom: 10px;
-}
-.chart-wrapper .chart-title {
-    border-bottom: 1px solid #d7d7d7;
-    color: #666;
-    font-size: 14px;
-    font-weight: 200;
-    padding: 7px 10px 4px;
-}
-.row {
-    padding-left: 20px !important;
-}
-.dc-chart{
-    flex-flow: column;
-    flex-wrap: wrap;
-    align-self: right;
-    padding-top: 12px;
-    padding-bottom: 0px;
-}
-/*.col-sm-6 .col-sm-12 {
-    flex-flow: column;
-    flex-wrap: wrap;
-    /*align-self: left;
-    position: relative;
-    padding-top: 12px;
-    padding-bottom: 0px;
-}*/
-.col-md-6 .col-sm-12 {
-    display: grid;
-    float: left;
-    clear: both;
-    text-align: left;
-    margin-right: 15px;
-    justify-content: space-around;
-    padding-top: 12px;
-    padding-bottom: 0px;
-    flex-flow: row wrap;
-}
-.container-fluid {
-    display: -moz-inline-block;
-    display: inline-block;
-    width: auto;
-    clear: both;
-    float: left;
-    text-align: left;
-    margin: 15px;
 }

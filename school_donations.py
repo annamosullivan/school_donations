@@ -9,9 +9,10 @@ from bson.json_util import dumps
 app = Flask(__name__)
 
 
-MONGODB_HOST = 'localhost'
-MONGODB_PORT = 27017
-DBS_NAME = 'donorsUSA'
+MONGODB_HOST = 'ds013260.mlab.com'
+MONGODB_PORT = 13260
+DBS_NAME = 'heroku_6hq98jg7'
+MONGO_URI = 'mongodb://<dbuser>:<dbpassword>@ds013260.mlab.com:13260/heroku_6hq98jg7'
 COLLECTION_NAME = 'projects'
 FIELDS = {'funding_status': True, 'school_state': True, 'resource_type': True, 'poverty_level': True,
           'date_posted': True, 'total_donations': True, '_id': False}
@@ -26,7 +27,7 @@ def index():
 def donor_projects():
     connection = MongoClient(MONGODB_HOST, MONGODB_PORT)
     collection = connection[DBS_NAME][COLLECTION_NAME]
-    projects = collection.find(projection=FIELDS, limit=55000)
+    projects = collection.find(projection=FIELDS, limit=20000)
     json_projects = []
     for project in projects:
         json_projects.append(project)

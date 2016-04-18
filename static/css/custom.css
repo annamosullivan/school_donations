@@ -13,6 +13,14 @@
  .dc-chart g.row text {
      fill: black;
      font-size: 12px;
+     padding-top: 5px;
+     padding-bottom: 5px;
+ }
+ .dc-chart svg g g.row rect{
+     height: 30px;
+ }
+  .dc-chart svg g g.row text.row{
+
  }
  #total-projects {
      background: #33CC99;
@@ -109,7 +117,7 @@
      padding: 7px 10px 4px;
  }
  .row {
-     padding-left: 20px !important;
+     padding-left: 10px !important;
  }
 .dc-chart {
     width: 100%;

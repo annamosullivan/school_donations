@@ -1,5 +1,6 @@
 from flask import Flask
 from flask import render_template
+import pymongo
 from pymongo import MongoClient
 import json
 import os
@@ -11,12 +12,13 @@ from bson.json_util import dumps
 app = Flask(__name__)
 
 
-MONGODB_HOST = 'ds013260.mlab.com'
-MONGODB_PORT = 13260
-MONGO_URI = os.environ.get('mongodb://heroku_6hq98jg7:2lm9cccqvvl973fo3kqgdhg8aq@ds013260.mlab.com:13260/heroku_6hq98jg7', 'mongodb://localhost:27017/donorsUSA')
+# MONGODB_HOST = 'ds013260.mlab.com'
+# MONGODB_PORT = 13260
+MONGO_URI = os.environ.get('MONGOLAB_URI', 'mongodb://localhost:27017/donorsUSA')
 result = urlparse(MONGO_URI)
 DBS_NAME = result.path.split('/')[1]
-COLLECTION_NAME = 'opendata_projects_clean'
+# DBS_NAME = 'heroku_6hq98jg7'
+COLLECTION_NAME = 'projects'
 FIELDS = {'funding_status': True, 'school_state': True, 'resource_type': True, 'poverty_level': True,
           'date_posted': True, 'total_donations': True, '_id': False}
 

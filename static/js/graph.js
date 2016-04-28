@@ -136,7 +136,7 @@ function makeGraphs(error, projectsJson) {
 
    povertyLevelChart
        /*.width(300)*/
-       .height(250)
+       .height(180)
        .dimension(povertyLevelDim)
        .group(numProjectsByPovertyLevel)
        .xAxis().ticks(4);
@@ -154,7 +154,7 @@ function makeGraphs(error, projectsJson) {
 
     stateChart
         /*.width(800)*/
-        .height(800)
+        .height(400)
         .dimension(stateDim)
         .group(numProjectsByState)
         .xAxis().ticks(4);
